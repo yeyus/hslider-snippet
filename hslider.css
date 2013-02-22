@@ -1,0 +1,70 @@
+/*
+ * Horizontal slider CSS
+ *
+ * @autor Jesus Trujillo <jtrujillo@goindex.com>
+ */
+
+.hslider {
+	position: relative;
+	overflow: hidden;
+
+	/* debug */
+	/*border: 2px dotted #666;*/
+}
+
+.hslider .previous,.hslider .next,.hslider .slide-wrap {
+	position: relative;
+	height: 100%;
+}
+.hslider .previous, .hslider .slider-wrap {
+	float: left;
+}
+.hslider .next { 
+	float: right;
+}
+.hslider .previous,.hslider .next {
+	width: 7%;
+	font-size: 2.5em;
+	text-align: center;
+	cursor: pointer;
+	/* debug */
+	/* background-color: #eee;*/
+}
+
+.hslider .slider-wrap {
+	display: block;
+	position: relative;
+	width: 86%;
+	height: 100%;
+}
+.hslider .slider-container {
+    position:relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    white-space: nowrap;
+}
+.hslider .item-container {
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    white-space: normal;
+
+    /* debug */
+    background-color: #f3e1bb;
+}
+
+.hslider .item {
+	display: block;
+	height: 100%;
+}
+
+.previous-icon:before {
+	content: "\2770\ ";
+}
+.next-icon:after{
+	content: "\ \2771";
+}
